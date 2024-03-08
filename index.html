@@ -12,11 +12,32 @@
 <body>
 	<header>
 		<div class="logo">MY BOOK LIBRARY</div>
-		<button class="add-btn">ADD BOOK</button>
+		<button id="add-btn">ADD BOOK</button>
 	</header>
 	<section class="books-container">
 
 	</section>
+	<dialog>
+		<form action="" method="get">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name">
+			</div>
+			<div>
+				<label for="author">Author name</label>
+				<input type="text" name="author" id="author">
+			</div>
+			<div>
+				<label for="pages">Number of pages</label>
+				<input type="number" name="pages" id="pages">
+			</div>
+			<div class="read-check-container">
+				<input type="checkbox" name="isRead" id="read-status" value="true">
+				<label for="read-status">Read</label>
+			</div>
+			<button type="button" id="submit-btn">ADD</button>
+		</form>
+	</dialog>
 </body>
 
 </html>
